@@ -1,0 +1,114 @@
+@use "Variables";
+
+.page_5 {
+  padding-top: 100px;
+  height: 100vh !important;
+  position: relative;
+  background-color: #15123E;
+
+  .title {
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(263.24deg, #9130F4 21.05%, #4646F9 77.63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .info {
+    margin: 0 auto 95px auto;
+    max-width: 900px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  .inner {
+    display: flex;
+    position: relative;
+
+    img {
+      margin: 0 auto;
+    }
+
+    .item {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 430px;
+      height: 120px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 130%;
+      text-align: center;
+      letter-spacing: 0.04em;
+      border-radius: 30px;
+      background-color: Variables.$back_color;
+      z-index: 1;
+
+      &:nth-child(2) {
+        top: -40px;
+        right: 230px;
+      }
+
+      &:nth-child(3) {
+        bottom: 30px;
+        right: 230px;
+      }
+
+      &:nth-child(4) {
+        top: 140px;
+        left: 220px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
+        top: -1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 3px;
+        border-radius: 30px;
+        background: linear-gradient(90deg, rgba(143, 48, 244, 1), rgba(58, 73, 249, 1));
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: destination-out;
+        mask-composite: exclude;
+      }
+    }
+  }
+
+  .back_figure {
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    right: -500px;
+    top: -500px;
+    background: linear-gradient(177.23deg, rgba(66, 62, 224, 0.71) -13.49%, #4829A5 109.75%);
+    filter: blur(400px);
+    border-radius: 30000px;
+    transform: rotate(0.06deg);
+  }
+
+  .back_figure_2 {
+    position: absolute;
+    width: 1150px;
+    height: 1150px;
+    left: -500px;
+    bottom: -500px;
+    background: linear-gradient(177.23deg, #423EE0 -13.49%, #812DE2 109.75%);
+    filter: blur(450px);
+    border-radius: 900px;
+  }
+}

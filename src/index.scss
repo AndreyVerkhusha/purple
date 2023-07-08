@@ -1,0 +1,77 @@
+@import "styles/page_1";
+@import "styles/page_2";
+@import "styles/page_3";
+@import "styles/page_4";
+@import "styles/page_5";
+@import "styles/page_6";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.app {
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1540px;
+    z-index: 1;
+  }
+}
+
+// reuse components.
+.reload {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+  background: #243B53;
+  cursor: pointer;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// style full-page package
+.fp-watermark {
+  display: none !important;
+}
+
+.fp-overflow {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.section {
+  height: 100vh !important;
+}
+
+
+
+

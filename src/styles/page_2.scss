@@ -1,0 +1,131 @@
+@use 'Variables';
+
+.page_2 {
+  height: 100vh !important;
+  background: #F4F4F4;
+
+  .title {
+    padding-top: 30px;
+    margin: 0 auto 10px auto;
+    max-width: 710px;
+    width: 100%;
+    font-weight: 600;
+    line-height: 70px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: capitalize;
+    background: linear-gradient(263.24deg, #9130F4 21.05%, #4646F9 77.63%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .text {
+    margin: 0 auto 15px auto;
+    max-width: 800px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #121139;
+  }
+
+
+  .parent_chart {
+    position: relative;
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 980px;
+    min-height: 580px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #121139;
+
+    .text_info {
+      display: flex;
+      flex-direction: column;
+
+      .info_row {
+        margin-bottom: 8px;
+
+
+        &:nth-child(1) {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.5px;
+        }
+
+        &:nth-child(2) {
+          max-width: 270px;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 33px;
+          letter-spacing: 0.5px;
+          text-transform: capitalize;
+        }
+
+        &:nth-child(3) {
+          font-weight: 700;
+          font-size: 26px;
+          line-height: 39px;
+          letter-spacing: 0.5px;
+        }
+
+        &:nth-child(4) {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          letter-spacing: 0.5px;
+          color: #B8C0CC;
+        }
+      }
+
+      .group_labels {
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 10px;
+
+        .blue,
+        .purple {
+          position: relative;
+          margin-right: 35px;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 7px;
+            left: -20px;
+            background-color: #00C7F2;
+            border-radius: 50%;
+          }
+        }
+
+        .purple {
+          margin-right: 0px;
+
+          &:before {
+            background-color: #0FCA7A;
+          }
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: -20px;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(177.23deg, #423EE0 -13.49%, #812DE2 109.75%);;
+      filter: blur(45px);
+      border-radius: 30px;
+      z-index: -1;
+    }
+  }
+}
