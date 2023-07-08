@@ -1,0 +1,80 @@
+@use "Variables";
+
+.page_6 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh !important;
+  position: relative;
+  background-color: Variables.$back_color;
+  color: white;
+
+  .inner {
+    margin: auto auto 30px auto;
+    padding-bottom: 70px;
+    max-width: 1230px;
+    width: 100%;
+    border-bottom: 1px solid #71777D;
+
+    img {
+      margin-bottom: 30px;
+    }
+
+    .column_list {
+      display: flex;
+
+      li {
+        margin-right: 20px;
+        max-width: 195px;
+        width: 100%;
+
+        div {
+          margin-bottom: 5px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 40px;
+          letter-spacing: 0.3px;
+          transition: all .3s;
+          cursor: pointer;
+
+          &:first-child {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+            color: #92989F;
+          }
+          &:hover {
+            color: #92989F;
+          }
+        }
+
+        &:last-child {
+          max-width: 400px;
+
+          div:last-child {
+            margin-top: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.3px;
+          }
+        }
+      }
+    }
+  }
+
+  .author {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.257143px;
+    color: #92989F;
+  }
+
+  .fp-overflow {
+    display: flex;
+    flex-direction: column;
+  }
+}
